@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb{
+    background: #ffffff;
+    border-radius: 2px;
+}
+body{
+    background: black;
+    color: white;
+}
+
+
+.menu{
+    background: rgb(0, 0, 0, 0.39);
+    font-size: .9vw;
+    padding: 1vw 8%;
+    border-bottom: 1px solid white;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: end;
+}
+
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+.menu ul{
+    flex: 1;
+    text-align: right;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white ;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+
+}
+.menu ul li a:hover{
+    text-decoration: none;
+    color: black;
+    background: rgb(255, 255, 255, 0.62);
+}
+
+
+
+/* ///////////////////////////////////////////// */
+@keyframes wow2{
+    form{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+.textImg{
+    animation: wow2 5s;
+    box-sizing: border-box;
+    margin: auto;
+    width: 100%;
+    color: rgb(255, 255, 255); 
+    background-image: linear-gradient(to right top, #000000, #251e22, #433741, #5e5266, #75718f, #7e80a3, #8690b8, #8ca1cc, #8ca2cf, #8ca3d1, #8da4d4, #8da5d7);
+
+    padding: 100px;
+}
+.textImg h1 {
+    animation-duration: 1s;
+    animation-name: wow1;
+    text-align: center;
+    padding: 10px;
+	font-size: 3.4vw;
+    overflow: hidden;
+}
+
+.textImg p{
+    padding: 2% 0;
+	font-weight: 20;
+	font-size:.9vw;
+    text-align: center;
+}
+
+
+@keyframes wow1{
+    form{
+       opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes wow{
+    
+    0%{
+        opacity: 0;
+       
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+       
+        opacity: 1;
+    }
+
+}
+
+.conatiner2{ /* основной контейнер для блоков */
+    animation-duration: 2s;
+    animation-name: wow;
+    width: 70%;
+    overflow: hidden;
+    margin: 20px auto;
+   
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.newsBox1{
+  border: 1px solid #5fc3e4;
+    margin: 7px auto ;
+    width: 100%;
+    padding: 1% 1%;background: #8ca1cc75;
+    border-radius: 2px;
+}
+.newsBox1 p{
+    font-size: 1vw;;
+}
+.newsBox1 h2{
+    font-size: 1.2vw;;
+}
+.newsBox1 a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.11s;
+}
+.newsBox1 a:hover{
+
+    text-decoration: underline 1px;
+    color: rgb(138, 120, 168);
+    
+}
+.newsBox1 p,h2,img{
+    padding: 1% 1%;
+}
+
+
+.newsBox1 img{
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    margin: auto;
+    
+    
+
+}
+
+
+
+

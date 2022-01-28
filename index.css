@@ -1,0 +1,652 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+	font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-track{
+    background: rgba(255, 255, 255, 0);
+}
+::-webkit-scrollbar-thumb{
+    background: #F17C0E;
+    border-radius: 10px;
+}
+body{
+    background: black;
+    color: white;
+}
+
+
+.menu{
+    animation-duration: 2.7s;
+    animation-name: Boxer2;
+    background: rgb(0, 0, 0, 0.39);
+    font-size: .9vw;
+    z-index: 2;
+    padding: 1vw 8%;
+    border-bottom: 1px solid white;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    display: flex;
+}
+@keyframes Boxer2 {
+    
+    0%{
+        opacity: 0;
+    }
+    10%{
+        width: 0%;
+        opacity: 0;
+    }
+    60%{
+    opacity: 0;
+    }
+    100%{ 
+    opacity: 1;
+    width: 100%
+    }
+}
+.menu ul li{
+    animation-duration: 6s;
+    animation-name: textP;
+   
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    
+
+}
+.menu ul{
+    flex: 1;
+    text-align: right;
+
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white ;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+
+}
+.menu ul li a:hover{
+    text-decoration: none;
+    color: black;
+    background: rgb(255, 255, 255, 0.62);
+}
+
+
+
+.mainImg{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImgPage{
+    object-fit: cover;
+    width: 100%;
+  
+}
+
+.mainImg::after{
+    background: transparent;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+
+/* ///////////////////////////////////////////// */
+.textImg{
+    animation-duration: 2.3s;
+    animation-name: Boxer;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    position: absolute;
+    box-sizing: border-box;
+    align-items: center;
+    align-self: end;
+    padding-bottom: 5%;
+    width: 100%;
+    color: rgb(255, 255, 255); 
+}
+.textImg h1{
+    animation-duration: 1s;
+    animation-name: text;
+
+
+    padding-bottom: 2%;
+    -webkit-text-stroke: .1px #000000 ;
+	width:70%;
+	font-size:3.4vw;
+}
+
+.textImg p{
+    animation-duration: 9s;
+    animation-name: textP;
+
+
+	font-weight: 20;
+	width:60%;
+	font-size:.9vw;
+	
+}
+@keyframes Boxer {
+    from{
+        padding-bottom: 15%;
+    }
+    to{
+        padding-bottom: 5%;
+    }
+    80%{
+        padding-bottom: 15%;
+    }
+    100%{ 
+        padding-bottom: 5%;
+
+    }
+}
+@keyframes text {
+    from{
+    transform: scale(2);
+    opacity: 0;
+    
+    
+    }
+    to{
+       opacity: 1;
+
+    }
+
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+ 
+    
+}
+@keyframes textP {
+    from{
+        opacity: 0;
+
+        
+    }
+    to{
+        opacity: 1;
+    }
+
+    30%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 1;
+    }
+}
+.textImg .p1{
+    padding: .1%;
+}
+.textImg .p2{
+    padding: .5%;
+	font-weight: 550;
+    font-size:.8vw;
+}
+
+/* КОНЕЦ ПЕРВОГО КОНТЕЙНЕРА //////////////////////////////////*/
+
+
+
+.container{
+    width: 100%;
+    filter: brightness(1.2);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 80px auto;
+   animation-duration: 12.5s;
+    animation-name: textP;
+}
+
+.text1{
+    padding: 5px 0;
+    font-size: 1.8vw ;
+    font-weight: 700;
+}
+.text2{
+    padding: 5px 0;
+    font-size: .9vw ;
+    font-weight:light;
+}
+
+.box1{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5px 0;
+}
+.boxCild img{
+    width: 69px;
+}
+.boxCild{
+    margin: 30px 10px;
+    width: 370px;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.boxCild h2{
+    font-size: 1.2vw;
+    padding: 15px 0;
+}
+.boxCild p {
+    font-size: small;
+    padding-bottom: 40px;
+}
+.boxCild a{
+    padding: 10px 29px;
+    padding-bottom: 15px;
+    color: #EF7C0E ;
+    border: 2px solid #EF7C0E;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .9vw;
+   transition:background 0.2s,color 0.2s ;
+}
+.boxCild a:hover{
+    background: #F17C0E;
+    color: white;
+}
+/* ///////////////////////////////////////////// */
+
+.textBox{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 202px;
+
+
+}
+.textBlock3{
+    box-sizing: border-box;
+    padding: 40px 55px;
+    width: 50%;
+  
+}
+.textBlock3-1{
+    padding: 30px 19px;
+}
+.textBlock3-1 p{
+    font-size: 1vw;
+}
+.textBlock3-1 h1{
+    font-size: 1.7vw;
+}
+.textBlock3-2{
+   
+    background: #F17C0E;
+    padding-top: 115px;
+    
+}
+.textBlock3-2 h1{
+padding-bottom: 15px;
+margin-left: -20px;
+font-size: 1.1vw;
+}
+.textBlock3-2 ol{
+    font-size: .9vw;
+}
+/* /////////////////// */
+.photoBrand{
+
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    overflow: hidden;
+    justify-content: center;
+   
+}
+.photoBlolk4{
+    width: 380px;
+    padding: 5px;
+    
+}
+.photoBlolk4 img:hover{
+    filter: brightness(1.3);
+}
+.photoBlolk4 img{
+    width: 370px;
+    height: 240px;
+    object-fit: cover;
+    transition: filter 0.2s;
+   
+}
+
+.BestBlock4-1{
+    width: 60%;
+    margin: auto;
+}
+/* /////////////////////// */
+.theBest{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: -50px ;
+    margin-top: 70px;
+}
+ .BestBlock5-1{/* Лучшие Страховыекомпании на 2021 год*/
+    margin: 60px 0;
+    padding: 0 20px;
+    font-size: 1.5vw;
+    text-align: left;
+}
+.BestBlock5-1-2{/* вы используете хорошие руки*/
+    margin: 30px 0;
+    padding: 0 40px;
+    font-size: 2vw;
+    text-align: right;
+    
+}
+.BestBlock5-1-2 .yellow{
+    color: #F17C0E;
+    font-weight: bold;
+    font-size: 1.7vw;
+}
+.BestBlock5-1-2 .white{
+    font-weight: 400;
+    
+}
+.BestBlock5-1-3{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 145px 0;
+    justify-content: center;
+}
+.BestBlock5-2{
+    width: 50%;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+.BestBlock5-2-1{
+    padding-right: 10px;
+}
+.BestBlock5-2-1 h2{
+    font-size: 1.8vw;
+}
+.BestBlock5-2-1 a{
+    color: #fff;
+    font-size: 1.1vw;
+}
+.BestBlock5-2-1 .p1-1{
+background: #F17C0E;
+padding: 10px;
+font-size: .9vw;
+    
+}
+.BestBlock5-2-1 .p1-2{
+  
+    padding: 10px 0;
+    font-size: .8vw;
+        
+}
+
+.BestBlock5-2-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.BestBlock5-2-2-img {
+    box-sizing: border-box;
+    background-position: center;
+    background-size: cover;
+    background-image: url("img/Project/pexels-photo-1231643.jpeg");
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+/* ////////////////////////////// */
+.questions1{
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    margin: 0 auto;
+    text-align: center;
+}
+.quest1-1{
+    padding: 20px 0;
+}
+ .quest1-1 h1{/*Часто <br>задаваемые <br>вопросы */
+    padding: 5px;
+    font-size: 3vw;
+}
+.quest1-1 p{/*Sample text. Click */
+    padding: 5px;
+    font-size: .9vw;
+}
+ .quest1-2{ /*ul li*/
+    text-align: left;
+
+}
+.quest1-2 h3{
+    border-bottom: 1px solid silver;
+    margin-top: 10px;
+    padding: 25px;
+    position: relative;
+    cursor: pointer;
+   
+}
+.quest1-2 h3:focus ~ p {
+    display: block;
+    
+  
+}
+
+
+.quest1-2 li h3:focus {
+background:#F17C0E ;
+outline: none;
+transition: .2s ease-in-out;
+
+}
+
+.quest1-2 li h3::before{
+content: '>';
+padding: 10px 20px;
+position: absolute;
+top: 0;
+right: 10px;
+width: 10px;
+font-weight: 400;
+font-size: 30px;
+
+}
+.quest1-2 li h3:focus::before {
+transform: rotate(90deg);
+
+}
+
+.quest1-2 p{
+    
+    padding: 50px 20px;
+    font-size: .9vw;
+    display: none;
+}
+
+.quest1-2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.quest1-2 li{
+    transition: all 2s linear;
+    overflow: hidden;
+   
+}
+/* ////////////////////////////////// */
+.boxCarImage7{
+display: flex;
+width: 60%;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+margin: 100px auto;
+
+}
+.boxCar7-1{
+    width:67%;
+    
+}
+.imgCar{
+  text-align: center;
+}
+.imgCar img{
+  width: 100%;
+}
+.boxAllCar{
+    
+
+    
+}
+.boxCar7-2{
+    min-width: 300px;
+    width: 33% ;
+    text-align: right;
+    padding-right: 60px;
+    box-sizing: border-box;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+/* ///////////////////// */
+.from8{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    margin: 100px auto;
+    
+}
+.from8-1{
+    
+    width: 50%;
+}
+.from8-1-1{
+    width: 52%;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-right: 100px;
+}
+.from8-1-1 p{
+    font-size: 1.1vw;
+
+}
+.from8-1-1 h3{
+    font-size: 1.8vw;
+
+}
+.from8-1-1 .p8-1{
+    font-size: 1vw;
+
+}
+.from8-1-2{
+    width: 48%;
+    padding-top: 20px;
+}
+.from8-1-2 form .input1{
+    width: 100%;
+    padding: 12px;
+    margin: 5px auto;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    
+    font-size: .9vw;
+    text-align: left;
+    
+    border: none;
+    border-bottom: 2px solid rgb(255, 254, 254);
+    margin-bottom: 10px;
+}
+
+.from8-1-2 form .input1-2{
+    margin-top: 10px;
+    padding: 13px 23px;
+    padding-bottom: 15px;
+    color: #F17C0E;
+    background: rgba(0, 0, 0, 0);
+    text-decoration: none;
+    border: 2px solid #F17C0E;
+    font-size: .9vw;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 100px;
+    transition: background .2s, color .2s;
+    cursor: pointer;
+}
+.from8-1-2 form .input1-2:hover{
+    background: #F17C0E;
+    color: white;
+}
+.from8-1-2 a img{
+    margin: 55px 3px;
+    width: 22px;
+}
+/* /////////////////////// */
+
+@media screen and (max-width: 1550px) {
+    .box1{
+        width: 100%;
+        justify-content: center;
+    }
+    .container{
+        width: 90%;
+        justify-content: center;
+    }
+    .photoBrand{
+        width: 85%;
+        justify-content: center;
+    }
+    .theBest{
+        width: 80%;
+        justify-content: center;
+    }
+    .boxCarImage7{
+        width: 80%;
+        justify-content: center;
+    }
+}
+
