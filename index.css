@@ -20,6 +20,34 @@ body{
     color: white;
 }
 
+.mainImg{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImgPage{
+    object-fit: cover;
+    width: 100%;
+  
+}
+
+.mainImg::after{
+    background: transparent;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 
 .menu{
     animation-duration: 2.7s;
@@ -81,34 +109,6 @@ body{
 }
 
 
-
-.mainImg{
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.mainImgPage{
-    object-fit: cover;
-    width: 100%;
-  
-}
-
-.mainImg::after{
-    background: transparent;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
 
 
 /* ///////////////////////////////////////////// */
