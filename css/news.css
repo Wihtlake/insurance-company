@@ -80,7 +80,8 @@ body{
     margin: auto;
     width: 100%;
     color: rgb(255, 255, 255); 
-    background-image: linear-gradient(to right top, #000000, #251e22, #433741, #5e5266, #75718f, #7e80a3, #8690b8, #8ca1cc, #8ca2cf, #8ca3d1, #8da4d4, #8da5d7);
+    background: linear-gradient(to right top,#f89f5b , #3f1651);
+    background: linear-gradient(to right top,#f89f5b , #3f1651);
 
     padding: 100px;
 }
@@ -148,11 +149,11 @@ body{
     
 }
 .newsBox1{
-  border: 1px solid #5fc3e4;
-    margin: 7px auto ;
+    margin: 20px auto ;
     width: 100%;
-    padding: 1% 1%;background: #8ca1cc75;
-    border-radius: 2px;
+    background: linear-gradient(#15a3974d, rgba(63, 22, 81, 0.164));
+    border-radius: 20px;
+    padding: 30px 20px;
 }
 .newsBox1 p{
     font-size: 1vw;;

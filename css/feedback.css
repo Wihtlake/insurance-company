@@ -119,7 +119,7 @@ margin: auto;
     margin: 20px auto;
     width: 90%;
     padding: 30px;
-    background: linear-gradient(to right top,#f89f5b , #3f1651);
+    background: linear-gradient(to right top,#f89f5b , #3f16512f);
     border-radius: 10px;
 
 }
