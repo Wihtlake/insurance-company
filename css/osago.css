@@ -19,8 +19,6 @@ body{
     background: black;
     color: white;
 }
-
-
 .menu{
     background: rgba(0, 0, 0, 0.034);
     font-size: .9vw;
@@ -31,7 +29,6 @@ body{
     display: flex;
     justify-content: end;
 }
-
 .menu ul li{
     display: inline-block;
     list-style: none;
@@ -47,16 +44,12 @@ body{
     padding: 5px 20px;
     border-radius: 5px;
     transition: background 0.3s, color 0.3s;
-
 }
 .menu ul li a:hover{
     text-decoration: none;
     color: black;
     background: rgb(255, 255, 255, 0.62);
 }
-
-
-
 .box4{
     display: flex;
     flex-direction: row;
@@ -67,18 +60,11 @@ body{
     margin: 50px 0;
     animation: box4 4s;
 }
-/* @keyframes box4 {
-    0%{opacity: 0; filter: blur(5px);}
-    80%{opacity: 0; filter: blur(4px);}
-    100%{opacity: 1; filter: blur(0px);}
-    
-} */
 .box4-1{
     width: 20%;
     min-width: 250px;
     margin: 20px 20px;
     text-align: center;
-
 }
 .box4-1 h2{
     font-size: 1vw;
@@ -100,9 +86,7 @@ body{
     100%{
         opacity: .5;
     }
-    
 }
-
 @keyframes blur {
     from{
         opacity: 0;
@@ -116,7 +100,6 @@ body{
     100%{
         opacity: 1;
     }
-    
 }
 @keyframes blur1 {
     0%{
@@ -138,18 +121,15 @@ body{
         border-radius: 0;
         font-size: 1.5vw;
     }
-    
 }
 .box-footer{
     animation-name: blur;
     animation-duration: 5s;
     background: linear-gradient(to right top,#f89f5b , #3f1651);
-
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    
 }
 .box-footer::before{
     display: block; 
@@ -163,15 +143,11 @@ body{
     transform: translateY(-100%) skewY(-178deg);
     transform-origin: left;
 }
-
-
 .box2f-1-1{
-    
     text-align: center;
     vertical-align: middle;
     font-size: 1.5vw;
 }
-
 .box2f-1-1{
     animation-name: blur1;
     animation-duration: 2s;
@@ -192,18 +168,14 @@ body{
 .box2f-1 img{
     width: 100%;
 }
-
 .partners{
     width: 100%;
      text-align: center;
     background: linear-gradient(to right top,#f89f5b , #3f1651);
-     
     padding-top: 200px;
     padding-bottom: 200px;
     position: relative;
 }
-
-
 .partners::before{
     display: block; 
     content: '';
@@ -216,24 +188,16 @@ body{
     transform: translateY(-100%) skewY(-178deg);
     transform-origin: left;
 }
-
 .partners h2{
     margin: 50px 0;
     font-size: 1.8vw;
 }
-
-
-
-
 .boxP{
-   
-    
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin: 20px auto;
-
 }
 .boxlogoP{
      border: 1px solid;
@@ -241,14 +205,10 @@ body{
     min-width: 250px;
     display: flex;
     flex-direction: column;
-    
     box-sizing: border-box;
     padding: 20px;
-    
 }
-
 .boxlogoP img{
-    
     margin: auto;
     padding: 30px 20px;
     width: 180px;
@@ -260,7 +220,6 @@ body{
     margin-top: 50px;
     font-size: 1vw; 
 }
-
 .textP2::before{
     display: block; 
     content: '';
@@ -279,28 +238,23 @@ body{
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    
     padding: 100px 0;
     padding-bottom: 200px;
     margin-bottom: 50px 0;
     position: relative;
-   
 }
-
 .box5::before{
     display: block; 
     content: '';
     width: 100%; 
     height: 10px; 
     background: linear-gradient(to right top,#f89f5b , #3f1651);
-
     position: absolute; 
     bottom: 10px; 
     left: 0; 
     transform: translateY(-100%) skewY(-178deg);
     transform-origin: bottom;
 }
-
 .box5-1{
     width: 20%;
     min-width: 250px;
@@ -316,13 +270,6 @@ body{
     margin-bottom: 20px;
     filter: brightness(3);
 }
-
-
-
-
-
-
-
 .plus1-1{
     display: flex;
     flex-direction: column;
@@ -342,8 +289,6 @@ body{
     position: relative;
     cursor: pointer;
     transition: background 0.3s;
-    
-
 }
 .quest1-2 h3:hover{
     background: rgb(255, 255, 255);
@@ -352,58 +297,39 @@ body{
 .quest1-2 h3:focus ~ p {
     display: block;
 }
-
-
 .quest1-2 li h3:focus {
-background: rgb(255, 255, 255);
-color: rgba(0, 0, 0, 0.609);
-outline: none;
-transition: .2s ease-in-out;
-
+    background: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.609);
+    outline: none;
+    transition: .2s ease-in-out;
 }
-
 .quest1-2 li h3::before{
-content: '+';
-
-position: absolute;
-top: 10px;
-right: 10px;
-
-font-weight: 300;
-font-size: 40px;
-transition: transform 0.2s ease;
-
+    content: '+';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: 300;
+    font-size: 40px;
+    transition: transform 0.2s ease;
 }
 .quest1-2 li h3:focus::before {
-transform: rotate(45deg);
-transition: transform 0.2s ease;
-
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
 }
-
 .quest1-2 p{
-    
     padding: 50px 20px;
     font-size: .9vw;
     display: none;
 }
-
 .quest1-2 ul{
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
-
 .quest1-2 li{
     transition: all 2s linear;
     overflow: hidden;
-   
 }
-
-
-
-
-
 .from8{
     display: flex;
     flex-direction: row;
@@ -413,7 +339,6 @@ transition: transform 0.2s ease;
 }
 .container-form{
     background: linear-gradient(to right top,#f89f5b , #3f1651);
-    
     position: relative;
     padding: 200px 0;
     margin: 200px 0;
@@ -430,7 +355,6 @@ transition: transform 0.2s ease;
     transform: translateY(-100%) skewY(-178deg);
     transform-origin: bottom;
 }
-
 form input{
     border: transparent;
     outline: none;
@@ -440,7 +364,6 @@ form input::placeholder{
     color: white;
 }
 .from8-1{
-    
     width: 50%;
 }
 .from8-1-1{
@@ -451,15 +374,12 @@ form input::placeholder{
 }
 .from8-1-1 p{
     font-size: 1.1vw;
-
 }
 .from8-1-1 h3{
     font-size: 1.8vw;
-
 }
 .from8-1-1 .p8-1{
     font-size: 1vw;
-
 }
 .from8-1-2{
     width: 48%;
@@ -472,15 +392,12 @@ form input::placeholder{
     color: white;
     background: rgba(0, 0, 0, 0);
     text-decoration: none;
-    
     font-size: .9vw;
     text-align: left;
-    
     border: none;
     border-bottom: 2px solid rgb(255, 254, 254);
     margin-bottom: 10px;
 }
-
 .from8-1-2 form .input1-2{
     margin-top: 10px;
     padding: 13px 23px;
